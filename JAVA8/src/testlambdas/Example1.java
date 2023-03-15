@@ -37,37 +37,34 @@ public class Example1 {
 		Thread t1 = new Thread(r1);
 		t1.start();
 		
-		Runnable r = ()->{
+		Runnable r11 = ()->{
 			for(int i =0;i<5;i++)
 			{
 				System.out.println("in run method");
 			}
 		};
 		
-		Thread t = new Thread(r);
+		Thread t = new Thread(r11);
 		t.start();
 		
 		
 		
-		
-		
-		
-		factorial f = (int c)->{
-			int result =1;
-			
-			for(int i =1;i<=c;i++) {
-				 result = result*i;
-			}
-			return result;
-			
-		};
-		
-		int result = f.fact(5);
-		System.out.println(result);
+//	factorial f = (int c)-> 
+//		{
+//			int result =1;
+//			
+//			for(int i =1;i<=c;i++) {
+//				 result = result*i;
+//			}
+//			return result;
+//			
+//		};
+//		int result = f.fact(5);
+//		System.out.println(result);
 		
 			
 		
-		Math m = ( int b ,int  e)-> {
+		Math m1 = ( int b ,int  e)-> {
 			
 			int p =1;
 			for (int i=0;i<=e;i++) {
@@ -76,7 +73,7 @@ public class Example1 {
 			return p;
 			
 		};
-		double p = m.power(2,3);
+		double p = m1.power(2,3);
 		System.out.println(p);
 		
 		Shape s = ()-> {
